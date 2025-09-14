@@ -41,6 +41,18 @@ python api/index.py
 The application should deploy to [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples) 
 out of the box.
 
+
+# Assgienment Related
+
+## Bug Detected
+little-endian is expcted by the document while the big-endian was used. Updated in apo/index.py in line 41.
+
+## Test
+Run
+```bash
+pytest -v
+```
+
 Just Add New... > Project, import the Git repository, and off you go.
 Note that Vercel's Hobby plan means your private repository needs to be
 in your personal GitHub account, not the organizational account.

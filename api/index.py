@@ -38,7 +38,7 @@ def base64_to_number(b64_str):
     try:
         # Decode base64 to bytes, then convert bytes to integer
         decoded_bytes = base64.b64decode(b64_str)
-        return int.from_bytes(decoded_bytes, byteorder='little')
+        return int.from_bytes(decoded_bytes, byteorder='little') # bug detected: was big, should be set to little-endian by docs
     except:
         raise ValueError("Invalid base64 input")
 
